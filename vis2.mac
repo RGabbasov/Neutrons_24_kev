@@ -1,0 +1,22 @@
+/control/verbose 0
+/run/verbose 0
+/vis/verbose 0
+/tracking/verbose 0
+#/stepping/verbose 1
+/vis/scene/create
+
+/vis/open OGLIX 600
+#/vis/open ATree
+#/vis/open VRML2FILE
+#/vis/open DAWNFILE
+#/vis/open HepRepFile
+#/vis/open RayTracer
+
+/vis/viewer/set/viewpointThetaPhi 270 0 deg
+#/vis/scene/add/trajectories
+/vis/viewer/set/style surface
+
+#/tracking/storeTrajectory 1
+#/vis/scene/endOfEventAction accumulate 
+#/run/beamOn 1
+
